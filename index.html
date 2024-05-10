@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            width: {
+              card: "min(340px,100%)",
+            },
+            colors: {
+              primary: "#ffffff",
+              "primary-foreground": "#171717",
+              secondary: "#525252",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      /* You may write styles inside this <style> tag or within `css/style.css`. */
+    </style>
+  </head>
+  <body class="px-2 sm:px-0">
+    <!-- Add your site or application content here -->
+
+    <div
+      class="flex flex-col gap-4 w-card bg-primary p-6 border border-primary shadow-md mx-auto mt-[200px] rounded-lg"
+    >
+      <div class="flex items-center gap-4">
+        <img
+          class="size-12"
+          src="./img/profile-thumbnail.png"
+          alt="Profile picture of Sarah Dole"
+        />
+        <div class="flex flex-col gap-px overflow-hidden">
+          <strong class="text-lg font-semibold truncate text-primary-foreground"
+            >Sarah Dole</strong
+          >
+          <span class="text-sm text-secondary">@sarahdole</span>
+        </div>
+      </div>
+
+      <p class="text-secondary line-clamp-5">
+        I've been searching for high-quality abstract images for my design
+        projects, and I'm thrilled to have found this platform. The variety and
+        depth of creativity are astounding!
+      </p>
+    </div>
+
+    <!-- Attribute this challenge to yourself! -->
+    <div class="credits">
+      A challenge by
+      <a
+        href="https://www.greatfrontend.com/projects?ref=challenges"
+        target="_blank"
+        >GreatFrontEnd Projects</a
+      >. Built by
+      <a href="https://www.greatfrontend.com/u/your_username" target="_blank"
+        >Cisco</a
+      >.
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
